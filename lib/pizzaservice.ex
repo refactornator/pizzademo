@@ -1,7 +1,9 @@
 defmodule Pizzaservice do
 	use GenServer
+	import Logger
 
 	def start_link do
+		info "YIPPI UP AND RUNNING"
 		GenServer.start_link(__MODULE__, [], name: Pizzaservice)
 	end
 
